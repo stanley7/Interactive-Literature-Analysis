@@ -142,9 +142,6 @@ Users should be aware of:
 
 - Full-text analysis support
 - Multi-language support
-- Learned routing suggestions
-- Citation network analysis
-- Integration with reference managers
 - User study evaluation
 
 ## License
