@@ -4,28 +4,24 @@ from llm_experts import summarize_paper, extract_contributions, answer_question
 
 # Path to  papers folder
 PAPER_DIR = "Datasets/papers"
-PREVIEW_CHARS = 600  # Number of characters to show in preview
+PREVIEW_CHARS = 600 
 
 # List all available papers
 paper_files = list_papers(PAPER_DIR)
 
-def show_paper_preview(filename):
-    """Show the first N characters of the selected paper as a preview."""
+def show_paper_preview(filename):    
     text = get_paper_text(PAPER_DIR, filename)
     return text[:PREVIEW_CHARS] + ("..." if len(text) > PREVIEW_CHARS else "")
 
-def summarizer_interface(filename):
-    """Call summarizer expert."""
+def summarizer_interface(filename):    
     text = get_paper_text(PAPER_DIR, filename)
     return summarize_paper(text)
 
-def contributions_interface(filename):
-    """Call contributions expert."""
+def contributions_interface(filename):   
     text = get_paper_text(PAPER_DIR, filename)
     return extract_contributions(text)
 
-def qa_interface(filename, question):
-    """Call Q&A expert."""
+def qa_interface(filename, question):   
     text = get_paper_text(PAPER_DIR, filename)
     return answer_question(text, question)
 
@@ -57,3 +53,4 @@ with gr.Blocks() as demo:
             qa_btn.click(fn=qa_interface, inputs=[selected_paper, qa_question], outputs=qa_output)
 
 demo.launch()
+
