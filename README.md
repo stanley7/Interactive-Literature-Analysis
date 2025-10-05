@@ -13,11 +13,11 @@ Unlike traditional MoE systems with learned routing mechanisms, this system adop
 
 ## Features
 
-- 📄 PDF paper processing and text extraction
-- 🤖 Three specialized LLM experts powered by Google Gemini 2.0 Flash
-- 🎯 Human-guided expert routing for transparency and control
-- 🖥️ Interactive web interface built with Gradio
-- 🔍 Automatic abstract detection and extraction
+- PDF paper processing and text extraction
+- Three specialized LLM experts powered by Google Gemini 2.0 Flash
+- Human-guided expert routing for transparency and control
+- Interactive web interface built with Gradio
+- Automatic abstract detection and extraction
 
 ## System Architecture
 
