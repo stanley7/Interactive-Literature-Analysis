@@ -89,7 +89,10 @@ Interactive-Literature-Analysis/
 ├── llm_experts.py             # Expert module implementations
 ├── data_preprocessing.py      # PDF processing and text extraction
 ├── requirements.txt           # Python dependencies
-├── Mixture of Experts for Interactive Literature Analysis.pdf   # Term paper    
+├── Mixture of Experts for Interactive Literature Analysis.pdf   # Term paper
+├── Screenshot/
+│   └── UI.jpg
+│   └── About 
 ├── Datasets/
 │   └── papers/               # PDF papers 
 └── README.md
